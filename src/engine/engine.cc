@@ -178,7 +178,7 @@ mozc::Status Engine::Init(
 #define RETURN_IF_NULL(ptr)                                                 \
   do {                                                                      \
     if (!(ptr))                                                             \
-      return mozc::ResourceExhaustedError("engigine.cc: " #ptr " is null"); \
+      return mozc::ResourceExhaustedError("engine.cc: " #ptr " is null"); \
   } while (false)
 
   suppression_dictionary_ = absl::make_unique<SuppressionDictionary>();
